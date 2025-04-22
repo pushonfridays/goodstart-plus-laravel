@@ -1,0 +1,52 @@
+{
+  "name": "dev",
+  "service": "devcontainer",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/workspaces",
+  "dockerComposeFile": "../docker-compose.yaml",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
+    "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
+      "plugins": ["laravel"]
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bierner.markdown-mermaid",
+        "mikestead.dotenv",
+        "github.vscode-github-actions",
+        "waderyan.gitblame",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "bmewburn.vscode-intelephense-client",
+        "redhat.vscode-yaml",
+        "DavidAnson.vscode-markdownlint",
+        "bierner.markdown-preview-github-styles",
+        "yahyabatulu.vscode-markdown-alert",
+        "laravel.vscode-laravel",
+        "ms-azuretools.vscode-docker",
+        "CarlosHenrique.dark-material-dracula",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode"
+      ]
+    },
+    "settings": {
+      "php.validate.executablePath": "/usr/local/bin/php",
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "[php]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "workbench.colorTheme": "Dark Material Dracula",
+      "terminal.integrated.defaultProfile.osx": "zsh",
+      "terminal.integrated.profiles.osx": {
+        "zsh": {
+          "path": "/bin/zsh"
+        }
+      }
+    }
+  }
+}

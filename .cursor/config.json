@@ -1,0 +1,102 @@
+{
+  "formatting": {
+    "indentSize": 2,
+    "useTabs": false,
+    "maxLineLength": 80,
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "prettierConfig": {
+      "singleQuote": true,
+      "semi": false,
+      "plugins": [
+        "prettier-plugin-organize-imports",
+        "prettier-plugin-tailwindcss"
+      ]
+    }
+  },
+  "conventions": {
+    "namingConventions": {
+      "variables": "camelCase",
+      "constants": "UPPER_SNAKE_CASE",
+      "functions": "camelCase",
+      "classes": "PascalCase",
+      "components": "PascalCase",
+      "privateMembers": "_camelCase"
+    },
+    "imports": {
+      "sortImports": true,
+      "groupImports": true,
+      "importOrder": [
+        "^react$",
+        "^@/components/ui/(.*)$",
+        "^@/components/(.*)$",
+        "^@/layouts/(.*)$",
+        "^@/types$",
+        "^[./]"
+      ]
+    }
+  },
+  "documentation": {
+    "requireJSDoc": true,
+    "requireParamDescription": true,
+    "requireReturnDescription": true
+  },
+  "codeQuality": {
+    "maxFunctionLength": 30,
+    "maxParameters": 4,
+    "complexity": {
+      "maxCyclomaticComplexity": 10
+    },
+    "noUnusedVariables": true,
+    "noConsole": true
+  },
+  "services": {
+    "app": {
+      "eslintRules": {
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "react/no-unescaped-entities": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react-namespace-import/no-namespace-import": "error"
+      },
+      "ignores": ["vendor", "node_modules", "public", "bootstrap/ssr"]
+    }
+  },
+  "styling": {
+    "tailwind": {
+      "version": 4,
+      "conventions": {
+        "preferArbitraryValues": true,
+        "colorOpacity": "slash",
+        "useLogicalProperties": true,
+        "spacing": {
+          "useSquareBrackets": true,
+          "preferArbitrary": true
+        },
+        "containerQueries": true,
+        "mediaQueries": {
+          "preferModern": true
+        }
+      },
+      "classOrder": [
+        "layout",
+        "position",
+        "display",
+        "flexbox",
+        "grid",
+        "spacing",
+        "sizing",
+        "typography",
+        "backgrounds",
+        "borders",
+        "effects",
+        "transitions",
+        "transforms",
+        "interactivity"
+      ]
+    }
+  }
+}
