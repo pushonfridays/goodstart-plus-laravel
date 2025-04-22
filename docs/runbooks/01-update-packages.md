@@ -8,11 +8,11 @@ Regularly updating packages is crucial for several important reasons:
 
 2. **Bug Fixes**: Package maintainers regularly fix bugs and edge cases that could affect the stability and reliability of your application.
 
-3. **Performance Improvements**: Updates frequently include optimizations that can make your application faster and more efficient.
+3. **Performance Improvements**: Updates frequently include optimisations that can make your application faster and more efficient.
 
 4. **New Features**: Staying current gives you access to new functionality and improvements that can enhance your development experience and application capabilities.
 
-5. **Compatibility**: As the JavaScript ecosystem evolves, keeping dependencies updated helps ensure compatibility with other tools and libraries in your stack.
+5. **Compatibility**: As the JavaScript and PHP ecosystem evolves, keeping dependencies updated helps ensure compatibility with other tools and libraries in your stack.
 
 6. **Technical Debt**: Regularly updating in small increments is typically easier than dealing with major version jumps after long periods of neglect.
 
