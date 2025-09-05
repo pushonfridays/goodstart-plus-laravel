@@ -34,8 +34,8 @@ services:
     # volumes:
     #   - './services/app:/var/www/html'
     #   - './services/app/database/database.sqlite:/var/www/html/database/database.sqlite'
-    networks:
-      - gs
+    # networks:
+    #   - gs
     depends_on:
       - redis
       - mailpit
@@ -45,8 +45,8 @@ services:
       - '${FORWARD_REDIS_PORT:-6379}:6379'
     volumes:
       - 'gs-redis:/data'
-    networks:
-      - gs
+    # networks:
+    #   - gs
     healthcheck:
       test:
         - CMD
@@ -59,11 +59,11 @@ services:
     ports:
       - '${FORWARD_MAILPIT_PORT:-1025}:1025'
       - '${FORWARD_MAILPIT_DASHBOARD_PORT:-8025}:8025'
-    networks:
-      - gs
-networks:
-  gs:
-    driver: bridge
+    # networks:
+    #   - gs
+# networks:
+#   gs:
+#     driver: bridge
 volumes:
   gs-redis:
     driver: local
