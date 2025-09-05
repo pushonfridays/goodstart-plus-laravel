@@ -31,9 +31,9 @@ services:
       WWWUSER: '${WWWUSER}'
       LARAVEL_SAIL: 1
     env_file: './services/app/.env'
-    volumes:
-      - './services/app:/var/www/html'
-      - './services/app/database/database.sqlite:/var/www/html/database/database.sqlite'
+    # volumes:
+    #   - './services/app:/var/www/html'
+    #   - './services/app/database/database.sqlite:/var/www/html/database/database.sqlite'
     networks:
       - gs
     depends_on:
