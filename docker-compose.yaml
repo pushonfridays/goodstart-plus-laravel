@@ -64,6 +64,9 @@ services:
 # networks:
 #   gs:
 #     driver: bridge
+networks:
+  coolify:
+    external: true
 volumes:
   gs-redis:
     driver: local
